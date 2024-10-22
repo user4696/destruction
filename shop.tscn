@@ -5,7 +5,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eulke"]
 
 [node name="18534ShoppingCartV1" type="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 23.9274, 28.1166, 41.1293)
+transform = Transform3D(0.01, 0, 0, 0, -4.37114e-10, 0.01, 0, -0.01, -4.37114e-10, 23.9274, 28.1166, 41.1293)
 material_override = SubResource("StandardMaterial3D_eulke")
 mesh = ExtResource("2_myr5e")
 
