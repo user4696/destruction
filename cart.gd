@@ -15,15 +15,15 @@ func _process(delta):
 func handle_input(delta):
 	# Detect forward/backward movement (W/S)
 	var input_vector = Vector3.ZERO
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("north"):
 		input_vector.z -= 1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("south"):
 		input_vector.z += 1
 
 	# Detect left/right movement (A/D)
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("east"):
 		rotate_y(-rotation_speed * delta)
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("west"):
 		rotate_y(rotation_speed * delta)
 
 	# Apply movement direction
@@ -31,7 +31,7 @@ func handle_input(delta):
 
 	# Determine if the player is boosting
 	var current_speed = speed
-	if Input.is_action_pressed("ui_boost"):
+	if Input.is_action_pressed("boost"):
 		current_speed = boost_speed
 
 	# Move the cart
