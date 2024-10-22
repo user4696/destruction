@@ -1,10 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxnqtgw65q0a5"]
+[gd_scene load_steps=5 format=3 uid="uid://dxnqtgw65q0a5"]
 
+[ext_resource type="Script" path="res://level_1.gd" id="1_s1yvf"]
 [ext_resource type="PackedScene" uid="uid://7n1ceecq81ne" path="res://cart.tscn" id="1_xkkmf"]
 [ext_resource type="PackedScene" uid="uid://cf54tvqdpwv2v" path="res://WoodPlatform_1.fbx" id="2_pee4n"]
+[ext_resource type="PackedScene" uid="uid://deq5d366mdt1m" path="res://wood.tscn" id="4_tulwx"]
 
 [node name="level1" type="Node3D"]
+script = ExtResource("1_s1yvf")
 
 [node name="cartcar" parent="." instance=ExtResource("1_xkkmf")]
+transform = Transform3D(0.0991829, 0, 0, 0, 0.0991829, 0, 0, 0, 0.0991829, 0, 0.614172, 0)
 
 [node name="WoodPlatform_1" parent="." instance=ExtResource("2_pee4n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25557, 0, 0)
+
+[node name="Camera1" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00190238, 0.999998, 0, -0.999998, -0.00190238, 0.934623, 2.74306, 1.88706)
+fov = 121.878
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06652, 2.96826, 3.65694)
+light_energy = 16.0
+light_indirect_energy = 16.0
+light_volumetric_fog_energy = 16.0
+
+[node name="StaticBody3D" parent="." instance=ExtResource("4_tulwx")]
