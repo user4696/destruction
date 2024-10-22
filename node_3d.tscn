@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://dwb088r8wlv3h"]
+[gd_scene load_steps=2 format=3 uid="uid://dw6puev518osm"]
+
+[ext_resource type="PackedScene" uid="uid://cf54tvqdpwv2v" path="res://WoodPlatform_1.fbx" id="1_edhu5"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="WoodPlatform_1" parent="." instance=ExtResource("1_edhu5")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -22.4439, -16.3424, -8.18613)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WoodPlatform_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0601014, 0.204145, 0)

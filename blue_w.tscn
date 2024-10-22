@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbmqlktxvmrk8"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_lx1hv"]
+
+[node name="blue_w" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lx1hv")
+
+[node name="play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 271.0
+offset_right = 476.0
+offset_bottom = 407.0
+theme_override_font_sizes/font_size = 64
+text = "Play"
+
+[node name="quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 651.0
+offset_top = 273.0
+offset_right = 890.0
+offset_bottom = 409.0
+theme_override_font_sizes/font_size = 64
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 100.0
+offset_right = 879.0
+offset_bottom = 262.0
+theme_override_font_sizes/font_size = 64
+text = "Blue Wins"
