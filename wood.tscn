@@ -713,3 +713,6 @@ skeleton = NodePath("")
 transform = Transform3D(-1.19209e-07, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1, -7.10543e-15, -1.19209e-07, -3.68335, 0, -4.38979)
 mesh = SubResource("ArrayMesh_8vvyt")
 skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3800, 0, 0, 0, 100, 0, 0, 0, 2500, -1.23523, -0.373794, -1.70167)
