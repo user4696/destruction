@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://7n1ceecq81ne" path="res://cart.tscn" id="1_xkkmf"]
 [ext_resource type="PackedScene" uid="uid://81e3owrsg21n" path="res://flooring.tscn" id="4_4sl18"]
 [ext_resource type="PackedScene" uid="uid://b7k46q04kyep6" path="res://cart_2.tscn" id="4_rhwwd"]
-[ext_resource type="AudioStream" uid="uid://ec30onwr2j3o" path="res://Family Guy Funniest Moments Compilation.mp3" id="5_yt6uk"]
+[ext_resource type="AudioStream" uid="uid://cha2i4w23jwoi" path="res://FE N.mp3" id="5_menmc"]
 
 [node name="level1" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.438164)
@@ -29,4 +29,6 @@ light_volumetric_fog_energy = 16.0
 [node name="flooring" parent="." instance=ExtResource("4_4sl18")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_yt6uk")
+stream = ExtResource("5_menmc")
+volume_db = 4.0
+autoplay = true
