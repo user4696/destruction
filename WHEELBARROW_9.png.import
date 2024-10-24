@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://0yoyxixnm8r"
+path="res://.godot/imported/WHEELBARROW_9.png-387d38771a53a6c22527c1f392495ce3.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={
+"md5": "3df488dbb60e63798a78248a79aa1df0"
+}
+
+[deps]
+
+source_file="res://WHEELBARROW_9.png"
+dest_files=["res://.godot/imported/WHEELBARROW_9.png-387d38771a53a6c22527c1f392495ce3.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

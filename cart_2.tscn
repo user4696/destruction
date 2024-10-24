@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dc1rkb5vibf23"]
+[gd_scene load_steps=6 format=3 uid="uid://b7k46q04kyep6"]
 
 [ext_resource type="Script" path="res://cart2.gd" id="1_vgnsl"]
 [ext_resource type="Texture2D" uid="uid://poxjxeabvt8s" path="res://3DS/_275.jpg" id="2_722tx"]

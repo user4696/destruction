@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk7s1wab3sghf"]
+
+[ext_resource type="PackedScene" uid="uid://cxha2f72rjkft" path="res://WHEELBARROW.glb" id="1_j80xx"]
+
+[node name="Wheelbarrow" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -0.0112397, -0.999937, 0, 0.999937, -0.0112397, 0.703638, 0.182541, 0.973885)
+
+[node name="WHEELBARROW" parent="." instance=ExtResource("1_j80xx")]
+transform = Transform3D(0.986863, -0.161139, -0.0116239, 0.161294, 0.98681, 0.0138821, 0.00923364, -0.0155746, 0.999837, -0.773054, 0.752176, -1.29788)
