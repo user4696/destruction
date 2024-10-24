@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ec30onwr2j3o"
+path="res://.godot/imported/Family Guy Funniest Moments Compilation.mp3-a5cdda604e2322cb91b8f89c8847a121.mp3str"
+
+[deps]
+
+source_file="res://Family Guy Funniest Moments Compilation.mp3"
+dest_files=["res://.godot/imported/Family Guy Funniest Moments Compilation.mp3-a5cdda604e2322cb91b8f89c8847a121.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

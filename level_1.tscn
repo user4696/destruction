@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxnqtgw65q0a5"]
+[gd_scene load_steps=6 format=3 uid="uid://dxnqtgw65q0a5"]
 
 [ext_resource type="Script" path="res://level_1.gd" id="1_s1yvf"]
 [ext_resource type="PackedScene" uid="uid://7n1ceecq81ne" path="res://cart.tscn" id="1_xkkmf"]
 [ext_resource type="PackedScene" uid="uid://81e3owrsg21n" path="res://flooring.tscn" id="4_4sl18"]
 [ext_resource type="PackedScene" uid="uid://b7k46q04kyep6" path="res://cart_2.tscn" id="4_rhwwd"]
+[ext_resource type="AudioStream" uid="uid://ec30onwr2j3o" path="res://Family Guy Funniest Moments Compilation.mp3" id="5_yt6uk"]
 
 [node name="level1" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.438164)
@@ -26,3 +27,6 @@ light_indirect_energy = 16.0
 light_volumetric_fog_energy = 16.0
 
 [node name="flooring" parent="." instance=ExtResource("4_4sl18")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_yt6uk")
