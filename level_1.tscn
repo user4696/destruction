@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://level_1.gd" id="1_s1yvf"]
 [ext_resource type="PackedScene" uid="uid://7n1ceecq81ne" path="res://cart.tscn" id="1_xkkmf"]
 [ext_resource type="PackedScene" uid="uid://81e3owrsg21n" path="res://flooring.tscn" id="4_4sl18"]
-[ext_resource type="PackedScene" uid="uid://dc1rkb5vibf23" path="res://cart_2.tscn" id="4_rhwwd"]
+[ext_resource type="PackedScene" uid="uid://b7k46q04kyep6" path="res://cart_2.tscn" id="4_rhwwd"]
 
 [node name="level1" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.438164)
