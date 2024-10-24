@@ -8,22 +8,23 @@ var rotation_speed : float = 3.0
 
 # Store movement vector
 var movement_velocity : Vector3 = Vector3.ZERO
+var input_vector = Vector3.ZERO
 
 func _process(delta):
 	handle_input(delta)
 
 func handle_input(delta):
 	# Detect forward/backward movement (W/S)
-	var input_vector = Vector3.ZERO
-	if Input.is_action_pressed("north"):
+	
+	if Input.is_action_pressed("backwards"):
 		input_vector.z -= 1
-	if Input.is_action_pressed("south"):
+	if Input.is_action_pressed("forwards"):
 		input_vector.z += 1
 
 	# Detect left/right movement (A/D)
-	if Input.is_action_pressed("east"):
+	if Input.is_action_pressed("left"):
 		rotate_y(-rotation_speed * delta)
-	if Input.is_action_pressed("west"):
+	if Input.is_action_pressed("right"):
 		rotate_y(rotation_speed * delta)
 
 	# Apply movement direction
