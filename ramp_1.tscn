@@ -1,0 +1,143 @@
+[gd_scene load_steps=2 format=3 uid="uid://tfqod3afwu5j"]
+
+[ext_resource type="PackedScene" uid="uid://jrkdtnhc50gr" path="res://wood_1.tscn" id="1_cdwem"]
+
+[node name="ramp1" type="StaticBody3D"]
+
+[node name="wood37" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 3.24332, 0.536876, -1.33881)
+
+[node name="wood38" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 0.891911, 0.529548, -1.35819)
+
+[node name="wood41" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 3.24332, 1.50265, 1.24233)
+
+[node name="wood42" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 0.891911, 1.49532, 1.22294)
+
+[node name="wood43" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 3.24332, 2.52837, 3.97633)
+
+[node name="wood44" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 0.891911, 2.52105, 3.95695)
+
+[node name="wood45" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 3.24332, 3.36496, 6.21177)
+
+[node name="wood46" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 0.891911, 3.35764, 6.19239)
+
+[node name="wood47" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 3.24332, 4.45258, 9.08211)
+
+[node name="wood48" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 0.935401, 0.353589, 0, -0.353589, 0.935401, 0.891911, 4.44525, 9.06273)
+
+[node name="wood52" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 7.97484, 5.59677, 8.97586)
+
+[node name="wood53" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 10.3262, 5.58944, 9.04465)
+
+[node name="wood54" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 7.98588, 6.56254, 6.4341)
+
+[node name="wood55" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 10.3372, 6.55521, 6.46354)
+
+[node name="wood56" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 7.99757, 7.58826, 3.70012)
+
+[node name="wood57" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 10.3489, 7.58094, 3.72956)
+
+[node name="wood58" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 8.00713, 8.42485, 1.4647)
+
+[node name="wood59" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 10.3584, 8.41753, 1.49414)
+
+[node name="wood60" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 8.0194, 9.51247, -1.40561)
+
+[node name="wood71" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -6.12251, 9.51247, -1.40561)
+
+[node name="wood61" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, 10.3707, 9.50514, -1.37617)
+
+[node name="wood62" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -6.16526, 5.59677, 8.97586)
+
+[node name="wood63" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -3.81395, 5.58944, 9.04465)
+
+[node name="wood64" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -6.15422, 6.56254, 6.4341)
+
+[node name="wood65" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -3.80292, 6.55521, 6.46354)
+
+[node name="wood66" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -6.14253, 7.58826, 3.70012)
+
+[node name="wood67" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -3.79122, 7.58094, 3.72956)
+
+[node name="wood68" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -6.13298, 8.42485, 1.4647)
+
+[node name="wood69" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -3.78167, 8.41753, 1.49414)
+
+[node name="wood70" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(-1, 3.09017e-08, -8.17791e-08, 0, 0.935444, 0.353475, 8.74228e-08, 0.353475, -0.935444, -3.76939, 9.50514, -1.37617)
+
+[node name="wood26" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.897, 5.01713, 11.9672)
+
+[node name="wood28" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.46111, 5.01713, 11.9672)
+
+[node name="wood29" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8786, 5.03226, 15.1329)
+
+[node name="wood31" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.48624, 5.01713, 15.1263)
+
+[node name="wood27" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.59339, 5.01713, 11.9672)
+
+[node name="wood30" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.23528, 5.01713, 11.9672)
+
+[node name="wood32" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.57499, 5.03226, 15.1329)
+
+[node name="wood33" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21014, 5.01713, 15.1263)
+
+[node name="wood40" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3248, 5.01713, 11.9672)
+
+[node name="wood49" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.96674, 5.01713, 11.9672)
+
+[node name="wood50" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3064, 5.03226, 15.1329)
+
+[node name="wood51" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9416, 5.01713, 15.1263)
+
+[node name="wood34" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.84019, 5.01713, 11.9672)
+
+[node name="wood35" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.19829, 5.01713, 11.9672)
+
+[node name="wood36" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.85859, 5.03226, 15.1329)
+
+[node name="wood39" parent="." instance=ExtResource("1_cdwem")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.22343, 5.01713, 15.1263)

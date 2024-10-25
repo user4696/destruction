@@ -11,20 +11,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.438164)
 script = ExtResource("1_s1yvf")
 
 [node name="cartcar" parent="." instance=ExtResource("1_xkkmf")]
-transform = Transform3D(0.0991829, 0, 0, 0, 0.0991829, 0, 0, 0, 0.0991829, -4.52187, 3.56013, 2.84597)
+transform = Transform3D(0.0991829, 0, 0, 0, 0.0991829, 0, 0, 0, 0.0991829, -4.52187, 0.385378, 4.16395)
 
-[node name="cart2" parent="." instance=ExtResource("4_rhwwd")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -4.85363, 5.33303, 2.8569)
-
-[node name="Camera1" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.00190238, 0.999998, 0, -0.999998, -0.00190238, -4.71237, 5.04696, 6.09671)
-fov = 121.878
-
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8402, 2.96826, 3.65694)
+[node name="OmniLight3D" type="OmniLight3D" parent="cartcar"]
+transform = Transform3D(10.0824, 0, 0, 0, 10.0824, 0, 0, 0, 10.0824, -13.2919, 26.0416, -5.11182)
 light_energy = 16.0
 light_indirect_energy = 16.0
 light_volumetric_fog_energy = 16.0
+
+[node name="cart2" parent="." instance=ExtResource("4_rhwwd")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.83211, 0.72362, 2.8569)
+
+[node name="Camera1" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.888881, 0.458138, 0, -0.458138, 0.888881, -4.71237, 2.86104, 3.80554)
+fov = 121.878
 
 [node name="flooring" parent="." instance=ExtResource("4_4sl18")]
 
