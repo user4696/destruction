@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://deq5d366mdt1m"]
+[gd_scene load_steps=6 format=4 uid="uid://deq5d366mdt1m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nngcm"]
 resource_name = "Material #26"
@@ -71,6 +71,8 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_18yuf")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t8tqs"]
 
 [node name="StaticBody3D" type="StaticBody3D"]
 
@@ -715,4 +717,5 @@ mesh = SubResource("ArrayMesh_8vvyt")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(3800, 0, 0, 0, 100, 0, 0, 0, 2500, -1.23523, -0.373794, -1.70167)
+transform = Transform3D(3800, 0, 0, 0, 100, 0, 0, 0, 2500, -1.23523, -0.13022, -1.70167)
+shape = SubResource("BoxShape3D_t8tqs")

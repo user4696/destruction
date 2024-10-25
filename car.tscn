@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5hcsu2cu5v08"]
+
+[ext_resource type="Script" path="res://car.gd" id="1_hitj1"]
+[ext_resource type="ArrayMesh" uid="uid://b6630huyor48x" path="res://18534_Shopping_Cart_v1.obj" id="1_vjkuo"]
+[ext_resource type="Texture2D" uid="uid://bi7u43g44ljdi" path="res://Capture.PNG" id="2_47w6i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csiv6"]
+albedo_texture = ExtResource("2_47w6i")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p1sde"]
+size = Vector3(46.7545, 80.9156, 71.6143)
+
+[node name="RigidBody3D" type="RigidBody3D"]
+transform = Transform3D(0.004, 0, 0, 0, 0.004, 0, 0, 0, 0.004, 0, 0, 0)
+script = ExtResource("1_hitj1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.004, 0, 0, 0, -1.74846e-10, 0.004, 0, -0.004, -1.74846e-10, 0.134539, 0.00650433, -0.00491834)
+material_override = SubResource("StandardMaterial3D_csiv6")
+mesh = ExtResource("1_vjkuo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.004, 0, 0, 0, 0.004, 0, 0, 0, 0.004, 1.57074, 40.1461, 0.963377)
+shape = SubResource("BoxShape3D_p1sde")

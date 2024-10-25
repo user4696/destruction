@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://38emqumt3kum"]
+
+[ext_resource type="PackedScene" uid="uid://c6vlamwjdbiup" path="res://base1.tscn" id="1_ryevq"]
+[ext_resource type="PackedScene" uid="uid://7n1ceecq81ne" path="res://cart.tscn" id="2_hy1x8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D" parent="." instance=ExtResource("1_ryevq")]
+
+[node name="cartcar" parent="." instance=ExtResource("2_hy1x8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0234089, 4.76837e-07, 0.000616074)
+
+[node name="Camera1" type="Camera3D" parent="cartcar"]
+transform = Transform3D(-1, -5.58429e-08, 6.7263e-08, 0, 0.7694, 0.638768, -8.74228e-08, 0.638768, -0.7694, -0.095576, 15.9468, -15.3091)
+fov = 112.625

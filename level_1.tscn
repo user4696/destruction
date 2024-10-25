@@ -1,34 +1,49 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxnqtgw65q0a5"]
+[gd_scene load_steps=7 format=3 uid="uid://dxnqtgw65q0a5"]
 
-[ext_resource type="Script" path="res://level_1.gd" id="1_s1yvf"]
 [ext_resource type="PackedScene" uid="uid://7n1ceecq81ne" path="res://cart.tscn" id="1_xkkmf"]
+[ext_resource type="Script" path="res://cart_3.gd" id="4_4avpa"]
 [ext_resource type="PackedScene" uid="uid://81e3owrsg21n" path="res://flooring.tscn" id="4_4sl18"]
 [ext_resource type="PackedScene" uid="uid://b7k46q04kyep6" path="res://cart_2.tscn" id="4_rhwwd"]
-[ext_resource type="AudioStream" uid="uid://cha2i4w23jwoi" path="res://FE N.mp3" id="5_menmc"]
+[ext_resource type="Texture2D" uid="uid://cpqcbv4rgidtw" path="res://ksi_3d_model__22_by_joemashups_dfcddpc.png" id="4_xfrrq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yhva4"]
+size = Vector3(1.85303, 2.08337, 0.209717)
 
 [node name="level1" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.438164)
-script = ExtResource("1_s1yvf")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43051e-06, -0.000486493, 0.438006)
 
 [node name="cartcar" parent="." instance=ExtResource("1_xkkmf")]
 transform = Transform3D(0.0991829, 0, 0, 0, 0.0991829, 0, 0, 0, 0.0991829, -4.52187, 0.385378, 4.16395)
+mass = 0.001
+gravity_scale = 0.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="cartcar"]
-transform = Transform3D(10.0824, 0, 0, 0, 10.0824, 0, 0, 0, 10.0824, -13.2919, 26.0416, -5.11182)
+transform = Transform3D(10.0824, 0, 0, 0, 10.0824, 0, 0, 0, 10.0824, -294.425, 31.5256, 134.851)
 light_energy = 16.0
 light_indirect_energy = 16.0
 light_volumetric_fog_energy = 16.0
+omni_range = 79.9155
 
 [node name="cart2" parent="." instance=ExtResource("4_rhwwd")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -6.83211, 0.72362, 2.8569)
-
-[node name="Camera1" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.888881, 0.458138, 0, -0.458138, 0.888881, -4.71237, 2.86104, 3.80554)
-fov = 121.878
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -7.08263, 0.353857, 2.68024)
 
 [node name="flooring" parent="." instance=ExtResource("4_4sl18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.66038, -0.201177, -0.393318)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_menmc")
-volume_db = 4.0
-autoplay = true
+[node name="cart3" type="RigidBody3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.249761, 0.0109223, 0, -0.0109223, 0.249761, -10.0035, 1.49377, -4.95992)
+mass = 0.001
+gravity_scale = 0.0
+script = ExtResource("4_4avpa")
+
+[node name="Sprite3D" type="Sprite3D" parent="cart3"]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, -0.87701, -2.6481, 0.0631485)
+texture = ExtResource("4_xfrrq")
+
+[node name="Camera1" type="Camera3D" parent="cart3"]
+transform = Transform3D(-4, 1.60385e-07, -3.10741e-07, 0, 3.55447, 1.8346, 3.49691e-07, 1.8346, -3.55447, -0.796741, 4.24361, -8.88385)
+fov = 92.6781
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cart3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.904068, -2.65103, 0.0341721)
+shape = SubResource("BoxShape3D_yhva4")
