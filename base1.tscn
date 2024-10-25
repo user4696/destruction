@@ -1,0 +1,125 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6vlamwjdbiup"]
+
+[ext_resource type="PackedScene" uid="uid://deq5d366mdt1m" path="res://wood.tscn" id="1_k7jyu"]
+[ext_resource type="PackedScene" uid="uid://jrkdtnhc50gr" path="res://wood_1.tscn" id="2_ubhfk"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" parent="." instance=ExtResource("1_k7jyu")]
+
+[node name="StaticBody3D2" parent="." instance=ExtResource("1_k7jyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 31.6523)
+
+[node name="wood1" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9076, 0, 12.735)
+
+[node name="wood2" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9076, 0, 15.9175)
+
+[node name="wood35" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5923, 0, 12.735)
+
+[node name="wood36" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5923, 0, 15.9175)
+
+[node name="wood17" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3263, 0, 28.4902)
+
+[node name="wood18" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3302, 0, 31.6749)
+
+[node name="wood19" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6872, 0, 28.4902)
+
+[node name="wood20" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6911, 0, 31.6749)
+
+[node name="wood21" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3337, 0, -3.27008)
+
+[node name="wood22" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3376, 0, -0.0854104)
+
+[node name="wood23" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6946, 0, -3.27008)
+
+[node name="wood24" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6985, 0, -0.0854104)
+
+[node name="wood25" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3729, 0, 9.38649)
+
+[node name="wood26" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3328, 0, 12.5712)
+
+[node name="wood27" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7544, 0, 9.38649)
+
+[node name="wood28" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7863, 0, 12.5712)
+
+[node name="wood29" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3512, 0, 15.7666)
+
+[node name="wood30" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3766, 0, 18.9513)
+
+[node name="wood31" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7336, 0, 15.7666)
+
+[node name="wood33" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.1524, 0, 12.5712)
+
+[node name="wood34" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0997, 0, 15.7666)
+
+[node name="wood32" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7375, 0, 18.9513)
+
+[node name="wood5" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0227121, 0, 12.735)
+
+[node name="wood6" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0491725, 0, 15.9175)
+
+[node name="wood7" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.36454, 0, 12.735)
+
+[node name="wood8" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.36454, 0, 15.9175)
+
+[node name="wood3" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.999, 0, 12.735)
+
+[node name="wood4" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.999, 0, 15.9175)
+
+[node name="StaticBody3D3" parent="." instance=ExtResource("1_k7jyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.726, 0, 0)
+
+[node name="StaticBody3D4" parent="." instance=ExtResource("1_k7jyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.726, 0, 31.6523)
+
+[node name="wood9" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.3392, 0, 12.735)
+
+[node name="wood10" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.3392, 0, 15.9175)
+
+[node name="wood11" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.7033, 0, 12.735)
+
+[node name="wood12" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.6769, 0, 15.9175)
+
+[node name="wood13" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.0906, 0, 12.735)
+
+[node name="wood14" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.0906, 0, 15.9175)
+
+[node name="wood15" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.3829, 0, 12.735)
+
+[node name="wood16" parent="." instance=ExtResource("2_ubhfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.3829, 0, 15.9175)
