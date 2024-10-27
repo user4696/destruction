@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://qy0mwgpwat36"]
+[gd_scene load_steps=9 format=3 uid="uid://qy0mwgpwat36"]
 
 [ext_resource type="PackedScene" uid="uid://c4mrqn45dmdc3" path="res://Map3.fbx" id="1_ivv1v"]
 [ext_resource type="Script" path="res://map.gd" id="1_sjxnx"]
 [ext_resource type="PackedScene" uid="uid://b5hcsu2cu5v08" path="res://car.tscn" id="2_hwmid"]
+[ext_resource type="AudioStream" uid="uid://dxsdp2nhwaoer" path="res://Thick Of It.mp3" id="4_i0noe"]
 [ext_resource type="PackedScene" uid="uid://tfqod3afwu5j" path="res://ramp_1.tscn" id="4_t7cix"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qpfv4"]
@@ -49,3 +50,8 @@ light_volumetric_fog_energy = 0.0
 
 [node name="ramp1" parent="." instance=ExtResource("4_t7cix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.280727, 32.4318)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_i0noe")
+volume_db = 24.0
+autoplay = true
