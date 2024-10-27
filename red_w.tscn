@@ -27,7 +27,7 @@ offset_top = 219.0
 offset_right = 750.0
 offset_bottom = 355.0
 theme_override_font_sizes/font_size = 64
-text = "Play"
+text = "Quit"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -37,3 +37,6 @@ offset_right = 826.0
 offset_bottom = 250.0
 theme_override_font_sizes/font_size = 64
 text = "Red Wins"
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

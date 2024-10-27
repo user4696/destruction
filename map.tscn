@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://qy0mwgpwat36"]
+[gd_scene load_steps=8 format=3 uid="uid://qy0mwgpwat36"]
 
 [ext_resource type="PackedScene" uid="uid://c4mrqn45dmdc3" path="res://Map3.fbx" id="1_ivv1v"]
+[ext_resource type="Script" path="res://map.gd" id="1_sjxnx"]
 [ext_resource type="PackedScene" uid="uid://b5hcsu2cu5v08" path="res://car.tscn" id="2_hwmid"]
+[ext_resource type="PackedScene" uid="uid://tfqod3afwu5j" path="res://ramp_1.tscn" id="4_t7cix"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qpfv4"]
 size = Vector3(196.489, 0.890747, 68.8183)
@@ -13,6 +15,7 @@ absorbent = true
 size = Vector3(2.37696, 3.82208, 4.16235)
 
 [node name="map" type="Node3D"]
+script = ExtResource("1_sjxnx")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -23,23 +26,26 @@ shape = SubResource("BoxShape3D_qpfv4")
 [node name="Map3" parent="StaticBody3D" instance=ExtResource("1_ivv1v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0304829, 0.0372677, 0.0394013)
 
-[node name="Node3D" parent="." instance=ExtResource("2_hwmid")]
+[node name="cart" parent="." instance=ExtResource("2_hwmid")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0456289, 0)
 mass = 7.0
 physics_material_override = SubResource("PhysicsMaterial_pkqm1")
 gravity_scale = 1.65
 
-[node name="carcam" type="Camera3D" parent="Node3D"]
+[node name="carcam" type="Camera3D" parent="cart"]
 transform = Transform3D(-1, -9.4416e-09, 8.69114e-08, 0, 0.994151, 0.107999, -8.74228e-08, 0.107999, -0.994151, 0, 0.965676, -2.16279)
 current = true
 fov = 59.6658
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Node3D"]
-transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0.439745, 0)
-light_energy = 2.263
-light_size = 10000.0
-omni_range = 4.57096
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Node3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="cart"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.133529, 0.19866, -0.0201066)
 shape = SubResource("BoxShape3D_el1g0")
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 91.3554, 0)
+light_energy = 0.03
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+
+[node name="ramp1" parent="." instance=ExtResource("4_t7cix")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.280727, 32.4318)
