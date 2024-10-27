@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://7n1ceecq81ne"]
+[gd_scene load_steps=6 format=3 uid="uid://7n1ceecq81ne"]
 
 [ext_resource type="Script" path="res://cart.gd" id="1_06kg7"]
 [ext_resource type="ArrayMesh" uid="uid://b6630huyor48x" path="res://18534_Shopping_Cart_v1.obj" id="2_j1i43"]
-[ext_resource type="Texture2D" uid="uid://poxjxeabvt8s" path="res://3DS/_275.jpg" id="2_pqdr2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_62gg4"]
 friction = 0.0
@@ -12,7 +11,6 @@ bounce = 0.03
 size = Vector3(531.941, 849.067, 838.152)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ymqd3"]
-albedo_texture = ExtResource("2_pqdr2")
 
 [node name="cartcar" type="RigidBody3D"]
 mass = 6.31
@@ -28,11 +26,11 @@ constant_force = Vector3(56, 0, 0)
 script = ExtResource("1_06kg7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.01, 0, 0, 0, -0.000217975, 0.00999762, 0, -0.00999762, -0.000217975, 0.157601, 4.4313, -0.0851206)
+transform = Transform3D(0.1, 0, 0, 0, -0.00217975, 0.0999762, 0, -0.0999762, -0.00217975, 0.157601, 54.427, -0.0851206)
 top_level = true
 shape = SubResource("BoxShape3D_8wdsu")
 
 [node name="18534ShoppingCartV1" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_ymqd3")
 mesh = ExtResource("2_j1i43")
