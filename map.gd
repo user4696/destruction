@@ -1,5 +1,6 @@
 extends Node3D
 
+
 @onready var player1_car = $Player1  # Path to Player 1’s car
 @onready var player2_car = $Player2  # Path to Player 2’s car
 @onready var player1_camera = $SubViewportContainer/SubViewport1/Camera3D
@@ -33,3 +34,4 @@ func _process(delta):
 	player2_camera.look_at(player2_car.global_transform.origin, Vector3.UP)
 	# Adjust each TextureRect to display each SubViewport side-by-side
 	# Scale each TextureRect to half the width of the window
+
