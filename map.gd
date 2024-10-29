@@ -33,6 +33,3 @@ func _process(delta):
 	player2_camera.look_at(player2_car.global_transform.origin, Vector3.UP)
 	# Adjust each TextureRect to display each SubViewport side-by-side
 	# Scale each TextureRect to half the width of the window
-
-
-	print("SubViewport and TextureRect setup completed.")

@@ -9,7 +9,7 @@
 size = Vector3(196.489, 0.890747, 68.8183)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3kty6"]
-size = Vector3(50.2205, 65.8801, 40.1701)
+size = Vector3(50.2205, 65.8801, 28.4273)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pkqm1"]
 absorbent = true
@@ -36,10 +36,10 @@ shape = SubResource("BoxShape3D_qpfv4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0304829, 0.0372677, 0.0394013)
 
 [node name="Player2" parent="." instance=ExtResource("3_hhcfa")]
-transform = Transform3D(1.6e-05, 0, 0, 0, 1.6e-05, 0, 0, 0, 1.6e-05, -1.80401, 0.0645081, -0.117879)
+transform = Transform3D(0.003, 0, 0, 0, 0.003, 0, 0, 0, 0.003, -2.79447, 0.0460122, 0.456569)
 
 [node name="skibidihit2" type="CollisionShape3D" parent="Player2"]
-transform = Transform3D(400, 0, 0, 0, 400, 0, 0, 0, 400, -303.227, 13087.7, 175.476)
+transform = Transform3D(400, 0, 0, 0, 400, 0, 0, 0, 400, -303.227, 13087.7, 3577.93)
 shape = SubResource("BoxShape3D_3kty6")
 
 [node name="Player1" parent="." instance=ExtResource("2_hwmid")]
@@ -63,7 +63,9 @@ layout_direction = 2
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -10.0
+offset_left = -73.0
+offset_right = 71.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -101,4 +103,4 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = SubResource("ViewportTexture_bd4bm")
-expand_mode = 4
+expand_mode = 2
