@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://qy0mwgpwat36"]
+[gd_scene load_steps=9 format=3 uid="uid://qy0mwgpwat36"]
 
 [ext_resource type="PackedScene" uid="uid://c4mrqn45dmdc3" path="res://Map3.fbx" id="1_ivv1v"]
+[ext_resource type="Script" path="res://map.gd" id="1_piti5"]
 [ext_resource type="PackedScene" uid="uid://b5hcsu2cu5v08" path="res://car.tscn" id="2_hwmid"]
+[ext_resource type="PackedScene" uid="uid://bjbtgtywe6n5c" path="res://skibidii.tscn" id="3_hhcfa"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qpfv4"]
 size = Vector3(196.489, 0.890747, 68.8183)
@@ -12,7 +14,11 @@ absorbent = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_el1g0"]
 size = Vector3(2.37696, 3.82208, 4.16235)
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_vbwvv"]
+viewport_path = NodePath("SubViewportContainer/SubViewport2")
+
 [node name="map" type="Node3D"]
+script = ExtResource("1_piti5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -23,23 +29,70 @@ shape = SubResource("BoxShape3D_qpfv4")
 [node name="Map3" parent="StaticBody3D" instance=ExtResource("1_ivv1v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0304829, 0.0372677, 0.0394013)
 
-[node name="Node3D" parent="." instance=ExtResource("2_hwmid")]
+[node name="Player1" parent="." instance=ExtResource("2_hwmid")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0456289, 0)
 mass = 7.0
 physics_material_override = SubResource("PhysicsMaterial_pkqm1")
 gravity_scale = 1.65
 
-[node name="carcam" type="Camera3D" parent="Node3D"]
+[node name="Camera3D" type="Camera3D" parent="Player1"]
 transform = Transform3D(-1, -9.4416e-09, 8.69114e-08, 0, 0.994151, 0.107999, -8.74228e-08, 0.107999, -0.994151, 0, 0.965676, -2.16279)
 current = true
 fov = 59.6658
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Node3D"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Player1"]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0.439745, 0)
 light_energy = 2.263
 light_size = 10000.0
 omni_range = 4.57096
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Node3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Player1"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.133529, 0.19866, -0.0201066)
 shape = SubResource("BoxShape3D_el1g0")
+
+[node name="Player2" parent="." instance=ExtResource("3_hhcfa")]
+transform = Transform3D(0.004, 0, 0, 0, 0.004, 0, 0, 0, 0.004, -1.80401, 0.0645081, -0.117879)
+
+[node name="Camera3D" type="Camera3D" parent="Player2"]
+transform = Transform3D(7.5222, 54.6635, -243.835, -1.68555, 243.951, 54.6376, 249.881, 1.86353e-06, 7.70873, -429.017, 184.643, 175.847)
+current = true
+fov = 35.2322
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SubViewport1" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="TextureRect1" type="TextureRect" parent="SubViewportContainer/SubViewport1"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SubViewport2" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="SubViewportContainer/SubViewport2"]
+offset_left = -383.0
+offset_top = -218.0
+offset_right = 1537.0
+offset_bottom = 862.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource("ViewportTexture_vbwvv")
