@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjbtgtywe6n5c"]
+
+[ext_resource type="Script" path="res://skibidii.gd" id="1_fpyky"]
+[ext_resource type="PackedScene" uid="uid://bjfprcnst3j0v" path="res://gman_normal_ep.7.glb" id="2_4ytiu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p1sde"]
+size = Vector3(84.5512, 108.732, 40.1701)
+
+[node name="Player2" type="RigidBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 14.1463, 0, 0)
+script = ExtResource("1_fpyky")
+
+[node name="skibidihit" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4944, 55.5655, 175.476)
+shape = SubResource("BoxShape3D_p1sde")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("2_4ytiu")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 459.578, 0, -193.418)
