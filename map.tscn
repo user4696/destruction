@@ -1,10 +1,11 @@
-[gd_scene load_steps=31 format=3 uid="uid://qy0mwgpwat36"]
+
+[gd_scene load_steps=11 format=3 uid="uid://qy0mwgpwat36"]
 
 [ext_resource type="PackedScene" uid="uid://c4mrqn45dmdc3" path="res://Map3.fbx" id="1_ivv1v"]
-[ext_resource type="Script" path="res://map.gd" id="1_sjxnx"]
+[ext_resource type="Script" path="res://map.gd" id="1_piti5"]
 [ext_resource type="PackedScene" uid="uid://b5hcsu2cu5v08" path="res://car.tscn" id="2_hwmid"]
+[ext_resource type="PackedScene" uid="uid://bjbtgtywe6n5c" path="res://skibidii.tscn" id="3_hhcfa"]
 [ext_resource type="AudioStream" uid="uid://dxsdp2nhwaoer" path="res://Thick Of It.mp3" id="4_i0noe"]
-[ext_resource type="PackedScene" uid="uid://tfqod3afwu5j" path="res://ramp_1.tscn" id="4_t7cix"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qpfv4"]
 size = Vector3(196.489, 0.113464, 68.8183)
@@ -76,14 +77,25 @@ size = Vector3(1.19556, 5.76419, 0.001)
 [sub_resource type="BoxShape3D" id="BoxShape3D_lyh5y"]
 size = Vector3(0.001, 5.58081, 7.6449)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_3kty6"]
+size = Vector3(50.2205, 65.8801, 40.1701)
+
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pkqm1"]
 absorbent = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_el1g0"]
-size = Vector3(2.37696, 3.82208, 4.16235)
+size = Vector3(279.107, 350.407, 347.26)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_sggmb"]
+viewport_path = NodePath("SubViewportContainer/SubViewport2")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_bd4bm"]
+viewport_path = NodePath("SubViewportContainer/SubViewport1")
 
 [node name="map" type="Node3D"]
-script = ExtResource("1_sjxnx")
+
+script = ExtResource("1_piti5")
+
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -1482,11 +1494,77 @@ shape = SubResource("BoxShape3D_lyh5y")
 [node name="Map3" parent="StaticBody3D" instance=ExtResource("1_ivv1v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0304829, 0.0372677, 0.0394013)
 
+
+[node name="Player2" parent="." instance=ExtResource("3_hhcfa")]
+transform = Transform3D(1.6e-05, 0, 0, 0, 1.6e-05, 0, 0, 0, 1.6e-05, -1.80401, 0.0645081, -0.117879)
+
+[node name="skibidihit2" type="CollisionShape3D" parent="Player2"]
+transform = Transform3D(400, 0, 0, 0, 400, 0, 0, 0, 400, -303.227, 13087.7, 175.476)
+shape = SubResource("BoxShape3D_3kty6")
+
+
 [node name="cart" parent="." instance=ExtResource("2_hwmid")]
+
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0456289, 0)
 mass = 7.0
 physics_material_override = SubResource("PhysicsMaterial_pkqm1")
 gravity_scale = 1.65
+
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Player1"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0.439745, 0)
+light_energy = 2.263
+light_size = 10000.0
+omni_range = 4.57096
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Player1"]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0.142702, 0.184508, 0.00198108)
+shape = SubResource("BoxShape3D_el1g0")
+
+[node name="SubViewportContainer" type="GridContainer" parent="."]
+layout_direction = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+columns = 2
+
+[node name="TextureRect2" type="TextureRect" parent="SubViewportContainer"]
+layout_mode = 2
+texture = SubResource("ViewportTexture_sggmb")
+expand_mode = 2
+
+[node name="SubViewport1" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport1"]
+transform = Transform3D(-1, -9.44157e-09, 8.69115e-08, 0, 0.994151, 0.107999, -8.74228e-08, 0.107999, -0.994151, 0, 1.0113, -2.16279)
+current = true
+fov = 59.6658
+
+[node name="SubViewport2" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport2"]
+transform = Transform3D(0.0300888, 0.218654, -0.975339, -0.0067422, 0.975803, 0.21855, 0.999524, 2.23624e-08, 0.030835, -3.52008, 0.80308, -0.0211622)
+current = true
+fov = 41.6038
+
+[node name="TextureRect1" type="TextureRect" parent="SubViewportContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource("ViewportTexture_bd4bm")
+expand_mode = 4
 
 [node name="carcam" type="Camera3D" parent="cart"]
 transform = Transform3D(-1, -9.4416e-09, 8.69114e-08, 0, 0.994151, 0.107999, -8.74228e-08, 0.107999, -0.994151, 0, 0.965676, -2.16279)
@@ -1512,3 +1590,4 @@ volume_db = 24.0
 autoplay = true
 
 [node name="Node3D" type="Node3D" parent="."]
+

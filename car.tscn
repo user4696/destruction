@@ -8,9 +8,9 @@
 albedo_texture = ExtResource("2_47w6i")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p1sde"]
-size = Vector3(46.7545, 80.9156, 71.6143)
+size = Vector3(84.5512, 108.732, 40.1701)
 
-[node name="RigidBody3D" type="RigidBody3D"]
+[node name="Player1" type="RigidBody3D"]
 transform = Transform3D(0.004, 0, 0, 0, 0.004, 0, 0, 0, 0.004, 0, 0, 0)
 script = ExtResource("1_hitj1")
 
